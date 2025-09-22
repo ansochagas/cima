@@ -23,7 +23,6 @@ services:
         value: "500"
       - key: RATE_LIMIT_LOGIN_MAX
         value: "20"
-    postDeployCommand: "npx prisma migrate deploy"
 
 databases:
   - name: cima-db
