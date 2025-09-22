@@ -25,7 +25,7 @@ services:
         value: "20"
     postDeployCommand: "npx prisma migrate deploy"
 
-  - type: static
+  - type: static_site
     name: cima-site
     rootDir: .
     buildCommand: ""
