@@ -596,6 +596,16 @@
   </div>
 
   <!-- JavaScript Files -->
+  <!-- Configuração de ambiente: defina a URL da API em produção -->
+  <script>
+    // Em desenvolvimento (localhost), o front usa '/api/v1'.
+    // Em produção (Render), defina a URL pública da sua API abaixo.
+    if (!window.location.hostname.includes('localhost')) {
+      // TODO: troque pelo endereço real da sua API no Render
+      // Exemplo: 'https://minha-api.onrender.com/api/v1'
+      window.API_BASE = 'https://SUA-API.onrender.com/api/v1';
+    }
+  </script>
   <script src="js/data.js"></script>
   <script src="js/auth.js"></script>
   <script src="js/admin.js"></script>
